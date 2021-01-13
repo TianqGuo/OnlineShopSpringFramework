@@ -42,7 +42,7 @@ public class CustomerDao {
     public Customer getCustomerByUserName(String userName) {
         User user = null;
         try (Session session = sessionFactory.openSession()) {
-
+            // create criteria and add conditions to criteria to get matching result like user
             Criteria criteria = session.createCriteria(User.class);
             user = (User) criteria.add(Restrictions.eq("emailId", userName)).uniqueResult();
         } catch (Exception e) {
