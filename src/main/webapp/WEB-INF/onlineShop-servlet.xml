@@ -12,6 +12,7 @@
 
 	<mvc:annotation-driven></mvc:annotation-driven>
 
+	<!--scan application config and check @Component based 	-->
 	<context:component-scan base-package="onlineShop"></context:component-scan>
 
 	<!-- Using this it get the actual view name by converting logical view name -->

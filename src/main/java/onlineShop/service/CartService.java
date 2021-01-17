@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import onlineShop.dao.CartDao;
 import onlineShop.entity.Cart;
 
+//use @service and @autowired created bean
 @Service
 public class CartService {
 

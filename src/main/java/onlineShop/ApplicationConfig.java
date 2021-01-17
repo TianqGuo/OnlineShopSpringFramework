@@ -12,6 +12,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+//note here we can use @bean and also use @service and @autowired to create bean
 @Configuration
 @EnableWebMvc
 public class ApplicationConfig {
