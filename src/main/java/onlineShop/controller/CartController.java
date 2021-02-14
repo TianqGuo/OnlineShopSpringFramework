@@ -23,6 +23,7 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
+    // return model view
     @RequestMapping(value = "/cart/getCartById", method = RequestMethod.GET)
     public ModelAndView getCartId(){
         ModelAndView modelAndView = new ModelAndView("cart");
@@ -33,6 +34,7 @@ public class CartController {
         return modelAndView;
     }
 
+    // get cart from cartService
     @RequestMapping(value = "/cart/getCart/{cartId}", method = RequestMethod.GET)
     @ResponseBody
     public Cart getCartItems(@PathVariable(value="cartId")int cartId){

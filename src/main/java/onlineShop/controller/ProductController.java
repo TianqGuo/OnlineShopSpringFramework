@@ -19,6 +19,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+//  mapping to all the URL and return model and view
     @RequestMapping(value = "/getAllProducts", method = RequestMethod.GET)
     public ModelAndView getAllProducts() {
         List<Product> products = productService.getAllProducts();

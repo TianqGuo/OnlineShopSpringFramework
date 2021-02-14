@@ -13,6 +13,7 @@ public class CartService {
     @Autowired
     private CartDao cartDao;
 
+    // get cart by id from cartDao
     public Cart getCartById(int cartId) {
         return cartDao.getCartById(cartId);
     }

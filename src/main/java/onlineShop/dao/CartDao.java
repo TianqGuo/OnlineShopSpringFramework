@@ -16,6 +16,7 @@ public class CartDao {
     @Autowired
     private SessionFactory sessionFactory;
 
+    // return cart information to cartService
     public Cart getCartById(int cartId) {
         Cart cart = null;
         try (Session session = sessionFactory.openSession()) {
